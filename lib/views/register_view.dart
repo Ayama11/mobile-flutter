@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../help/const.dart';
-import '../widgets/custom_elevatedButton.dart';
-import '../widgets/custom_textField.dart';
+import '../widgets/custom_elevated_Buttom.dart';
+import '../widgets/custom_text_Field.dart';
 import 'login_view.dart';
 
 class RegisterPage extends StatelessWidget {
@@ -12,11 +12,11 @@ class RegisterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xffEDE8EE),
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       body: ListView(
         children: [
           const SizedBox(
-            height: 33,
+            height: 30,
           ),
           Image.asset(
             'lib/assets/images/login.png',
@@ -28,9 +28,6 @@ class RegisterPage extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Column(
                 children: [
-                  const SizedBox(
-                    height: 10,
-                  ),
                   const Text(
                     'Register',
                     style: TextStyle(
@@ -40,7 +37,7 @@ class RegisterPage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    height: 20,
+                    height: 30,
                   ),
                   CustomTextField(
                     hintText: 'User name',
@@ -69,7 +66,7 @@ class RegisterPage extends StatelessWidget {
                     icons: Icons.lock_outline,
                   ),
                   const SizedBox(
-                    height: 30,
+                    height: 40,
                   ),
                   CustomElevatedButton(
                     text: 'Sign up',
@@ -103,7 +100,7 @@ class RegisterPage extends StatelessWidget {
                   'Login ',
                   style: TextStyle(
                       fontFamily: 'PTSerif-Regular',
-                      fontSize: 22,
+                      fontSize: 20,
                       color: Color(0xffe73fe4)),
                 ),
               ),

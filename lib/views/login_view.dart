@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:repopharma_app/views/register_view.dart';
 import '../help/const.dart';
-import '../widgets/custom_elevatedButton.dart';
-import '../widgets/custom_textField.dart';
+import '../widgets/custom_elevated_Buttom.dart';
+import '../widgets/custom_text_Field.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -11,7 +11,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xffEDE8EE),
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       body: ListView(
         children: [
           const SizedBox(height: 50),

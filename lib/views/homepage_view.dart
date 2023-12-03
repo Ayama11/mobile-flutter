@@ -10,7 +10,7 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       // AppBar
-      backgroundColor: const Color(0xffEDE8EE),
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
         elevation: 0,
         centerTitle: true,

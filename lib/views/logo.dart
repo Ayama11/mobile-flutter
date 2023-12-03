@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:repopharma_app/widgets/custom_elevatedButton.dart';
+import 'package:repopharma_app/widgets/custom_elevated_Buttom.dart';
 
 class LogoPage extends StatelessWidget {
   const LogoPage({super.key});
@@ -8,7 +8,7 @@ class LogoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xffEDE8EE),
+      backgroundColor: const Color.fromARGB(255, 253, 253, 253),
       body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         const SizedBox(
           height: 70,
@@ -20,13 +20,13 @@ class LogoPage extends StatelessWidget {
           ),
         ),
         const SizedBox(
-          height: 5,
+          height: 1,
         ),
         const Text(
           'RepoPharma',
           style: TextStyle(
               fontFamily: 'Kalam-Regular',
-              fontSize: 35,
+              fontSize: 40,
               color: Color(0xffFC9599)),
         ),
         const SizedBox(
