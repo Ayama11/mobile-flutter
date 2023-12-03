@@ -12,7 +12,7 @@ class RegisterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xffe4f6fd),
+      backgroundColor: const Color(0xffEDE8EE),
       body: ListView(
         children: [
           const SizedBox(

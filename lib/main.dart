@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:repopharma_app/pages/homepage.dart';
-import 'package:repopharma_app/pages/login.dart';
-import 'package:repopharma_app/pages/logo.dart';
+import 'package:repopharma_app/views/homepage.dart';
+import 'package:repopharma_app/views/login.dart';
+import 'package:repopharma_app/views/logo.dart';
 import 'package:repopharma_app/widgets/navigetion_mune.dart';
 
 void main() {

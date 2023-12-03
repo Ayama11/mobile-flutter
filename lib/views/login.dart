@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:repopharma_app/pages/register.dart';
+import 'package:repopharma_app/views/register.dart';
 import '../help/const.dart';
 import '../widgets/custom_elevatedButton.dart';
 import '../widgets/custom_textField.dart';
@@ -11,13 +11,15 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xffe4f6fd),
+      backgroundColor: const Color(0xffEDE8EE),
       body: ListView(
         children: [
           const SizedBox(height: 50),
-          Image.asset(
-            'lib/assets/images/login1.png',
-            height: 260,
+          Center(
+            child: Image.asset(
+              'lib/assets/images/login1.png',
+              height: 200,
+            ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 15),
@@ -52,7 +54,7 @@ class LoginPage extends StatelessWidget {
                     icons: Icons.lock_outline,
                   ),
                   const SizedBox(
-                    height: 30,
+                    height: 60,
                   ),
                   CustomElevatedButton(
                     getPage: '/NavigationMuneBottom',
@@ -90,7 +92,7 @@ class LoginPage extends StatelessWidget {
                   'Register ',
                   style: TextStyle(
                     fontFamily: 'PTSerif-Regular',
-                    fontSize: 22,
+                    fontSize: 18,
                     color: Color(0xffe73fe4),
                   ),
                 ),
