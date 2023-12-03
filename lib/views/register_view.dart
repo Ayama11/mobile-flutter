@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import '../help/const.dart';
 import '../widgets/custom_elevatedButton.dart';
 import '../widgets/custom_textField.dart';
-import 'login.dart';
+import 'login_view.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});
