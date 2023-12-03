@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:repopharma_app/views/homepage.dart';
+import 'package:repopharma_app/views/homepage_view.dart';
 
 class NavigationMuneBottom extends StatelessWidget {
   const NavigationMuneBottom({super.key});

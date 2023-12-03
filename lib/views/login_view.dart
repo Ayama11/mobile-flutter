@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:repopharma_app/views/register.dart';
+import 'package:repopharma_app/views/register_view.dart';
 import '../help/const.dart';
 import '../widgets/custom_elevatedButton.dart';
 import '../widgets/custom_textField.dart';

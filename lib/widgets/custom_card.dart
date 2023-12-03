@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
-import '../views/drugs.dart';
+import '../views/drugs_view.dart';
 
 class CustomCard extends StatelessWidget {
   const CustomCard({
