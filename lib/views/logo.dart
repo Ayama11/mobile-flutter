@@ -16,18 +16,20 @@ class LogoPage extends StatelessWidget {
         Center(
           child: Image.asset(
             'lib/assets/images/logo.png',
-            height: 280,
+            height: 260,
           ),
         ),
         const SizedBox(
           height: 1,
         ),
-        const Text(
-          'RepoPharma',
-          style: TextStyle(
-              fontFamily: 'Kalam-Regular',
-              fontSize: 40,
-              color: Color(0xffFC9599)),
+        const Center(
+          child: Text(
+            'RepoPharma',
+            style: TextStyle(
+                fontFamily: 'Charm-Regular',
+                fontSize: 40,
+                color: Color(0xffFC9599)),
+          ),
         ),
         const SizedBox(
           height: 110,

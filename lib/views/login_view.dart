@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:repopharma_app/views/forget_view.dart';
 import 'package:repopharma_app/views/register_view.dart';
 import '../help/const.dart';
 import '../widgets/custom_elevated_Buttom.dart';
@@ -14,11 +15,27 @@ class LoginPage extends StatelessWidget {
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       body: ListView(
         children: [
-          const SizedBox(height: 50),
-          Center(
-            child: Image.asset(
-              'lib/assets/images/login1.png',
-              height: 200,
+          const SizedBox(height: 70),
+          Padding(
+            padding: const EdgeInsets.only(left: 32),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                const Center(
+                  child: Text(
+                    'Login',
+                    style: TextStyle(
+                      fontFamily: 'PTSerif-Regular',
+                      fontSize: 30,
+                      color: kFontColor,
+                    ),
+                  ),
+                ),
+                Image.asset(
+                  'lib/assets/images/Mobile login (1).gif',
+                  height: 270,
+                ),
+              ],
             ),
           ),
           Padding(
@@ -27,20 +44,6 @@ class LoginPage extends StatelessWidget {
               padding: const EdgeInsets.all(8),
               child: Column(
                 children: [
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  const Text(
-                    'Login',
-                    style: TextStyle(
-                      fontFamily: 'PTSerif-Regular',
-                      fontSize: 35,
-                      color: kFontColor,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
                   CustomTextField(
                     hintText: 'E-Phone',
                     typeKey: TextInputType.number,
@@ -79,7 +82,7 @@ class LoginPage extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'PPlayfairDisplay-SemiBoldItalic',
                   fontSize: 18,
-                  color: kFontColor,
+                  color: Color.fromARGB(255, 109, 108, 108),
                 ),
               ),
               GestureDetector(
@@ -89,11 +92,42 @@ class LoginPage extends StatelessWidget {
                   );
                 },
                 child: const Text(
-                  'Register ',
+                  'Register now',
                   style: TextStyle(
                     fontFamily: 'PTSerif-Regular',
                     fontSize: 18,
-                    color: Color(0xffe73fe4),
+                    color: kFontColor,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 15,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                'Forget your password ? ',
+                style: TextStyle(
+                  fontFamily: 'PPlayfairDisplay-SemiBoldItalic',
+                  fontSize: 16,
+                  color: Color.fromARGB(255, 109, 108, 108),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  Get.off(
+                    const ForgetPassword(),
+                  );
+                },
+                child: const Text(
+                  'Create now',
+                  style: TextStyle(
+                    fontFamily: 'PTSerif-Regular',
+                    fontSize: 16,
+                    color: kFontColor,
                   ),
                 ),
               ),

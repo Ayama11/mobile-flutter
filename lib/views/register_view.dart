@@ -88,9 +88,10 @@ class RegisterPage extends StatelessWidget {
               const Text(
                 'Already have an account ? ',
                 style: TextStyle(
-                    fontFamily: 'PPlayfairDisplay-SemiBoldItalic',
-                    fontSize: 18,
-                    color: kFontColor),
+                  fontFamily: 'PPlayfairDisplay-SemiBoldItalic',
+                  fontSize: 18,
+                  color: Color.fromARGB(255, 109, 108, 108),
+                ),
               ),
               GestureDetector(
                 onTap: () {
@@ -99,9 +100,10 @@ class RegisterPage extends StatelessWidget {
                 child: const Text(
                   'Login ',
                   style: TextStyle(
-                      fontFamily: 'PTSerif-Regular',
-                      fontSize: 20,
-                      color: Color(0xffe73fe4)),
+                    fontFamily: 'PTSerif-Regular',
+                    fontSize: 20,
+                    color: kFontColor,
+                  ),
                 ),
               ),
             ],

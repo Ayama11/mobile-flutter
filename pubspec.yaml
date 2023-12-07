@@ -89,5 +89,8 @@ flutter:
     - family: Kalam-Regular
       fonts:
         - asset: lib/assets/fonts/Kalam-Regular.ttf
+    - family: Charm-Regular
+      fonts:
+        - asset: lib/assets/fonts\Charm-Regular.ttf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

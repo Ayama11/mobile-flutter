@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:repopharma_app/views/forget_view.dart';
 import 'package:repopharma_app/views/homepage_view.dart';
 import 'package:repopharma_app/views/login_view.dart';
 import 'package:repopharma_app/views/logo.dart';
@@ -22,7 +23,8 @@ class RepoPharma extends StatelessWidget {
         GetPage(name: "/Homepage", page: () => const Homepage()),
         GetPage(
             name: "/NavigationMuneBottom",
-            page: () => const NavigationMuneBottom())
+            page: () => const NavigationMuneBottom()),
+        GetPage(name: "/ForgetPassword", page: () => const ForgetPassword()),
       ],
       home: const LogoPage(),
     );
