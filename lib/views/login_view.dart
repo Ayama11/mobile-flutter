@@ -15,28 +15,24 @@ class LoginPage extends StatelessWidget {
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       body: ListView(
         children: [
-          const SizedBox(height: 70),
-          Padding(
-            padding: const EdgeInsets.only(left: 32),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                const Center(
-                  child: Text(
-                    'Login',
-                    style: TextStyle(
-                      fontFamily: 'PTSerif-Regular',
-                      fontSize: 30,
-                      color: kFontColor,
-                    ),
-                  ),
-                ),
-                Image.asset(
-                  'lib/assets/images/Mobile login (1).gif',
-                  height: 270,
-                ),
-              ],
+          const SizedBox(height: 50),
+          Image.asset(
+            'lib/assets/images/Mobile login (1).gif',
+            height: 270,
+            width: 260,
+          ),
+          const Center(
+            child: Text(
+              'Login',
+              style: TextStyle(
+                fontFamily: 'PTSerif-Regular',
+                fontSize: 30,
+                color: kFontColor,
+              ),
             ),
+          ),
+          const SizedBox(
+            height: 10,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 15),
@@ -72,7 +68,7 @@ class LoginPage extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 12,
+            height: 10,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -81,7 +77,7 @@ class LoginPage extends StatelessWidget {
                 'Dont have an account ? ',
                 style: TextStyle(
                   fontFamily: 'PPlayfairDisplay-SemiBoldItalic',
-                  fontSize: 18,
+                  fontSize: 16,
                   color: Color.fromARGB(255, 109, 108, 108),
                 ),
               ),
@@ -126,7 +122,7 @@ class LoginPage extends StatelessWidget {
                   'Create now',
                   style: TextStyle(
                     fontFamily: 'PTSerif-Regular',
-                    fontSize: 16,
+                    fontSize: 18,
                     color: kFontColor,
                   ),
                 ),

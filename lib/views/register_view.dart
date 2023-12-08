@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
+import 'package:iconsax/iconsax.dart';
 import '../help/const.dart';
 import '../widgets/custom_elevated_Buttom.dart';
 import '../widgets/custom_text_Field.dart';
@@ -16,11 +16,23 @@ class RegisterPage extends StatelessWidget {
       body: ListView(
         children: [
           const SizedBox(
-            height: 30,
+            height: 60,
           ),
           Image.asset(
-            'lib/assets/images/login.png',
-            height: 160,
+            'lib/assets/images/Security On-bro.png',
+            height: 1,
+          ),
+
+          const Icon(
+            Iconsax.user_edit,
+            color: kFontColor,
+
+            //Color.fromARGB(255, 109, 108, 108),
+            size: 100,
+          ),
+          //     const Icon(Iconsax.row_vertical),
+          const SizedBox(
+            height: 15,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 15),
@@ -42,6 +54,7 @@ class RegisterPage extends StatelessWidget {
                   CustomTextField(
                     hintText: 'User name',
                     icons: Icons.account_circle_outlined,
+                    //
                   ),
                   const SizedBox(
                     height: 20,
@@ -89,7 +102,7 @@ class RegisterPage extends StatelessWidget {
                 'Already have an account ? ',
                 style: TextStyle(
                   fontFamily: 'PPlayfairDisplay-SemiBoldItalic',
-                  fontSize: 18,
+                  fontSize: 16,
                   color: Color.fromARGB(255, 109, 108, 108),
                 ),
               ),

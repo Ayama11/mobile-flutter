@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:get/get.dart';
+import 'package:repopharma_app/help/const.dart';
 import 'package:repopharma_app/widgets/custom_card.dart';
 
 class Homepage extends StatelessWidget {
@@ -19,7 +20,7 @@ class Homepage extends StatelessWidget {
           style:
               TextStyle(fontSize: 18, color: Color.fromARGB(255, 63, 63, 63)),
         ),
-        backgroundColor: const Color.fromARGB(255, 231, 189, 240),
+        backgroundColor: kFontColor,
         actions: [
           IconButton(
             onPressed: () {},
