@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:repopharma_app/views/drugs_view.dart';
 import 'package:repopharma_app/views/homepage_view.dart';
+import 'package:repopharma_app/views/profile_view.dart';
 
 class NavigationMuneBottom extends StatelessWidget {
   const NavigationMuneBottom({super.key});
@@ -34,8 +36,8 @@ class NavigationMuneBottom extends StatelessWidget {
               label: 'Favorite',
             ),
             NavigationDestination(
-              icon: Icon(Iconsax.notification),
-              label: 'Notification',
+              icon: Icon(Iconsax.user),
+              label: 'Profile',
             ),
           ],
         ),
@@ -48,15 +50,13 @@ class NavigationMuneBottom extends StatelessWidget {
 class NavigationController extends GetxController {
   Rx<int> selectedIndex = 0.obs;
   final viewScreen = [
-    const Homepage(),
+    const Drugs(),
     Container(
       color: const Color.fromARGB(255, 255, 7, 201),
     ),
     Container(
       color: const Color.fromARGB(255, 7, 255, 90),
     ),
-    Container(
-      color: const Color.fromARGB(255, 7, 205, 255),
-    ),
+    const ProfileView(),
   ];
 }
