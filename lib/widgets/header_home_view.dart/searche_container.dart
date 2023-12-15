@@ -1,10 +1,12 @@
 import 'package:iconsax/iconsax.dart';
 import 'package:flutter/material.dart';
+
 class SearcheContainer extends StatelessWidget {
   const SearcheContainer({
     super.key,
+    required this.textsearche,
   });
-
+  final String textsearche;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -27,7 +29,7 @@ class SearcheContainer extends StatelessWidget {
                 width: 16,
               ),
               Text(
-                'Search in store',
+                textsearche,
                 style: TextStyle(color: Colors.grey[600]!),
               )
             ],

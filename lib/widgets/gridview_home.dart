@@ -5,27 +5,33 @@ import 'package:repopharma_app/widgets/custom_card.dart';
 class GridViewhome extends StatelessWidget {
   const GridViewhome({
     super.key,
+    required this.itemCount,
+    required this.itemBuilder,
+    this.mainAxisExtent = 200,
   });
+
+  final int itemCount;
+  final double? mainAxisExtent;
+  final Widget? Function(BuildContext, int) itemBuilder;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(0),
       child: GridView.builder(
-          itemCount: 6,
-          shrinkWrap: true,
-          physics: const NeverScrollableScrollPhysics(),
-          clipBehavior: Clip.none,
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            //childAspectRatio: 3,
-            crossAxisSpacing: 30,
-            mainAxisSpacing: 15,
-            mainAxisExtent: 200,
-          ),
-          itemBuilder: (BuildContext context, int index) {
-            return const CardGategory();
-          }),
+        itemCount: itemCount,
+        shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
+        clipBehavior: Clip.none,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          //childAspectRatio: 3,
+          crossAxisSpacing: 30,
+          mainAxisSpacing: 15,
+          mainAxisExtent: mainAxisExtent,
+        ),
+        itemBuilder: itemBuilder,
+      ),
     );
   }
 }

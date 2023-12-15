@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:repopharma_app/views/homepage_view.dart';
+import 'package:repopharma_app/views/madecen_view.dart';
 
 class CardGategory extends StatelessWidget {
   const CardGategory({super.key});
@@ -9,7 +10,7 @@ class CardGategory extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Get.to(const Homepage());
+        Get.to(const Medicen());
         // Navigator();
       },
       child: Card(

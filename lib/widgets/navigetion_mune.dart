@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:repopharma_app/views/cart_view.dart';
 import 'package:repopharma_app/views/drugs_view.dart';
+import 'package:repopharma_app/views/favorite_view.dart';
 import 'package:repopharma_app/views/homepage_view.dart';
 import 'package:repopharma_app/views/profile_view.dart';
 
@@ -51,12 +53,8 @@ class NavigationController extends GetxController {
   Rx<int> selectedIndex = 0.obs;
   final viewScreen = [
     const Drugs(),
-    Container(
-      color: const Color.fromARGB(255, 255, 7, 201),
-    ),
-    Container(
-      color: const Color.fromARGB(255, 7, 255, 90),
-    ),
+    const CartView(),
+    const FavoriteView(),
     const ProfileView(),
   ];
 }

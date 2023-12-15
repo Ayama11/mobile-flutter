@@ -10,20 +10,22 @@ class AppBarW extends StatelessWidget implements PreferredSizeWidget {
     this.actions,
     this.leadingOnPressed,
     this.showBackArrow = false,
+    required this.backgroundColor,
   });
 
   final Widget? titel;
-  final IconButton? leadingiIcon;
+  final IconData? leadingiIcon;
   final List<Widget>? actions;
   final VoidCallback? leadingOnPressed;
   final bool showBackArrow;
+  final backgroundColor;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: AppBar(
         elevation: 0,
-        backgroundColor: Colors.transparent,
+        backgroundColor: backgroundColor,
         automaticallyImplyLeading: false,
         // leading: leadingiIcon,
         // leading: Builder(
@@ -37,24 +39,26 @@ class AppBarW extends StatelessWidget implements PreferredSizeWidget {
         //     );
         //   },
         // ),
-        // // // showBackArrow
-        //     ? IconButton(
-        //         onPressed: () => Get.back(), icon: const Icon(Icons.back_hand))
-        //     : leadingiIcon != null
-        //         ? IconButton(
-        //             onPressed: leadingOnPressed, icon: Icon(leadingiIcon))
-        //         : null,
+        leading: showBackArrow
+            ? IconButton(
+                onPressed: () => Get.back(),
+                icon: const Icon(Iconsax.arrow_square_left),
+                color: Colors.black,
+              )
+            : leadingiIcon != null
+                ? IconButton(
+                    onPressed: leadingOnPressed, icon: Icon(leadingiIcon))
+                : null,
         title: titel,
-        actions: [
-          Builder(builder: (BuildContext context) {
-            return IconButton(
-              icon: const Icon(Iconsax.notification),
-              onPressed: () {
-                Scaffold.of(context).openDrawer();
-              },
-            );
-          })
-        ],
+        actions: actions,
+        // [
+        //   Builder(builder: (BuildContext context) {
+        //     return IconButton(
+        //       icon: const Icon(Iconsax.notification),
+        //       onPressed: () {},
+        //     );
+        //   })
+        // ],
       ),
     );
   }

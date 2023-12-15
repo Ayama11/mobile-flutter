@@ -20,24 +20,34 @@ class Drugs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
             PrimaryHeader(
               child: Column(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   // TAppBar(),
                   AppBarW(
-                    titel: Text(
+                    titel: const Text(
                       'welcome back',
                       style: TextStyle(
                           color: Color.fromARGB(255, 255, 253, 253),
                           fontSize: 18),
                     ),
+                    backgroundColor: Colors.transparent,
+                    actions: [
+                      Builder(builder: (BuildContext context) {
+                        return IconButton(
+                          icon: const Icon(Iconsax.notification),
+                          color: Colors.white,
+                          onPressed: () {},
+                        );
+                      })
+                    ],
 
                     //     // actions: [
                     //     //   // Icon(Icons.read_more_outlined)
@@ -52,25 +62,30 @@ class Drugs extends StatelessWidget {
                     //     //   ),
                     //     // ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 55,
                   ),
-                  SearcheContainer(),
+                  const SearcheContainer(
+                    textsearche: 'Searche in store',
+                  ),
                 ],
               ),
             ),
-            Center(
+            const Center(
               child: Text(
                 'Gategory',
                 style: TextStyle(fontSize: 20),
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(8),
+              padding: const EdgeInsets.all(8),
               child: Column(
                 children: [
-                  GridViewhome(),
-                  //  CardGategory(),
+                  GridViewhome(
+                    itemCount: 6,
+                    itemBuilder: (BuildContext context, index) =>
+                        const CardGategory(),
+                  ),
                 ],
               ),
             )
