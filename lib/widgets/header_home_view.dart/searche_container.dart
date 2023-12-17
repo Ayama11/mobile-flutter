@@ -1,8 +1,8 @@
 import 'package:iconsax/iconsax.dart';
 import 'package:flutter/material.dart';
 
-class SearcheContainer extends StatelessWidget {
-  const SearcheContainer({
+class SearchContainer extends StatelessWidget {
+  const SearchContainer({
     super.key,
     required this.textsearche,
   });

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:get/get.dart';
 import 'package:repopharma_app/help/const.dart';
-import 'package:repopharma_app/widgets/custom_card.dart';
+import 'package:repopharma_app/widgets/cards/custom_card.dart';
 import 'package:repopharma_app/widgets/gridview_home.dart';
 import 'package:repopharma_app/widgets/header_home_view.dart/appbar.dart';
 

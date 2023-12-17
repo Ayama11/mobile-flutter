@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:repopharma_app/help/const.dart';
-import 'package:repopharma_app/widgets/custom_card.dart';
+import 'package:repopharma_app/widgets/cards/custom_card.dart';
 import 'package:repopharma_app/widgets/gridview_home.dart';
 import 'package:repopharma_app/widgets/header_home_view.dart/appbar.dart';
 import 'package:repopharma_app/widgets/header_home_view.dart/searche_container.dart';
@@ -49,7 +49,7 @@ class Medicen extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            const SearcheContainer(textsearche: 'Searche in madicen'),
+            const SearchContainer(textsearche: 'Search in madicen'),
             Padding(
               padding: const EdgeInsets.all(8),
               child: GridViewhome(

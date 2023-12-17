@@ -18,7 +18,7 @@ class RepoPharma extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       getPages: [
-        GetPage(name: "/LoginPage", page: () => const LoginPage()),
+        GetPage(name: "/LoginPage", page: () => LoginPage()),
         GetPage(name: "/LogoPage", page: () => const LogoPage()),
         GetPage(name: "/Homepage", page: () => const Homepage()),
         GetPage(

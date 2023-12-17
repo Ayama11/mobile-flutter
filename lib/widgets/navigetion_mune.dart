@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:repopharma_app/views/cart_view.dart';
-import 'package:repopharma_app/views/drugs_view.dart';
-import 'package:repopharma_app/views/favorite_view.dart';
+import 'package:repopharma_app/views/navigetion_bottom/cart_view.dart';
+import 'package:repopharma_app/views/navigetion_bottom/drugs_view.dart';
+import 'package:repopharma_app/views/navigetion_bottom/favorite_view.dart';
 import 'package:repopharma_app/views/homepage_view.dart';
-import 'package:repopharma_app/views/profile_view.dart';
+import 'package:repopharma_app/views/navigetion_bottom/profile_view.dart';
 
 class NavigationMuneBottom extends StatelessWidget {
   const NavigationMuneBottom({super.key});

@@ -42,7 +42,8 @@ class AppBarW extends StatelessWidget implements PreferredSizeWidget {
         leading: showBackArrow
             ? IconButton(
                 onPressed: () => Get.back(),
-                icon: const Icon(Iconsax.arrow_square_left),
+                icon: const Icon(Iconsax.arrow_left_3),
+                //arrow_square_left
                 color: Colors.black,
               )
             : leadingiIcon != null

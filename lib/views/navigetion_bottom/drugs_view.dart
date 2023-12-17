@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:repopharma_app/help/const.dart';
 import 'package:repopharma_app/widgets/Appbar/appbar.dart';
-import 'package:repopharma_app/widgets/card_Gategory.dart';
-import 'package:repopharma_app/widgets/custom_card.dart';
+import 'package:repopharma_app/widgets/cards/card_Gategory.dart';
+import 'package:repopharma_app/widgets/cards/custom_card.dart';
 import 'package:repopharma_app/widgets/gridview_home.dart';
 
 import 'package:repopharma_app/widgets/header_home_view.dart/appbar.dart';
@@ -33,10 +33,11 @@ class Drugs extends StatelessWidget {
                   // TAppBar(),
                   AppBarW(
                     titel: const Text(
-                      'welcome back',
+                      'Welcome back',
                       style: TextStyle(
                           color: Color.fromARGB(255, 255, 253, 253),
-                          fontSize: 18),
+                          fontSize: 24,
+                          fontFamily: 'Charm-Regular'),
                     ),
                     backgroundColor: Colors.transparent,
                     actions: [
@@ -65,8 +66,8 @@ class Drugs extends StatelessWidget {
                   const SizedBox(
                     height: 55,
                   ),
-                  const SearcheContainer(
-                    textsearche: 'Searche in store',
+                  const SearchContainer(
+                    textsearche: 'Search in store',
                   ),
                 ],
               ),
@@ -74,7 +75,8 @@ class Drugs extends StatelessWidget {
             const Center(
               child: Text(
                 'Gategory',
-                style: TextStyle(fontSize: 20),
+                style: TextStyle(
+                    fontSize: 22, fontFamily: 'PlayfairDisplay-SemiBoldItalic'),
               ),
             ),
             Padding(

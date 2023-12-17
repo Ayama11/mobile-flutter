@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:repopharma_app/widgets/card_Gategory.dart';
-import 'package:repopharma_app/widgets/custom_card.dart';
+import 'package:repopharma_app/widgets/cards/card_Gategory.dart';
+import 'package:repopharma_app/widgets/cards/custom_card.dart';
 
 class GridViewhome extends StatelessWidget {
   const GridViewhome({
