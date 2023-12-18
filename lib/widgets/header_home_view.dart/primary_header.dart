@@ -8,8 +8,10 @@ class PrimaryHeader extends StatelessWidget {
   const PrimaryHeader({
     super.key,
     required this.child,
+    required this.height,
   });
   final Widget child;
+  final double height;
   @override
   Widget build(BuildContext context) {
     return CurveWidget(
@@ -17,7 +19,7 @@ class PrimaryHeader extends StatelessWidget {
         color: kBaseColor,
         padding: const EdgeInsets.all(0),
         child: SizedBox(
-          height: 310,
+          height: height,
           child: Stack(
             children: [
               Positioned(

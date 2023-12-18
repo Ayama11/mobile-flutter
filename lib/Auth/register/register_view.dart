@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import '../help/const.dart';
-import '../widgets/custom_elevated_Buttom.dart';
-import '../widgets/custom_text_Field.dart';
-import 'login_view.dart';
+import 'package:repopharma_app/Auth/register/register_controller.dart';
+import '../../help/const.dart';
+import '../../widgets/custom_elevated_Buttom.dart';
+import '../../widgets/custom_text_Field.dart';
+import '../login_view.dart';
 
 class RegisterPage extends StatelessWidget {
   RegisterPage({super.key});
@@ -13,6 +14,7 @@ class RegisterPage extends StatelessWidget {
   String? address;
   String? password;
 
+  RegisterController controller = Get.find();
   GlobalKey<FormState> formKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
@@ -60,6 +62,9 @@ class RegisterPage extends StatelessWidget {
                       height: 30,
                     ),
                     CustomTextField(
+                      onChanged: (data) {
+                        name = data;
+                      },
                       typeKey: TextInputType.name,
                       hintText: 'User name',
                       icons: Icons.account_circle_outlined,
@@ -69,6 +74,9 @@ class RegisterPage extends StatelessWidget {
                       height: 20,
                     ),
                     CustomTextField(
+                      onChanged: (data) {
+                        phone = data;
+                      },
                       hintText: 'E-Phone',
                       icons: Icons.phone,
                       typeKey: TextInputType.number,
@@ -77,6 +85,9 @@ class RegisterPage extends StatelessWidget {
                       height: 20,
                     ),
                     CustomTextField(
+                      onChanged: (data) {
+                        address = data;
+                      },
                       typeKey: TextInputType.text,
                       hintText: 'Address',
                       icons: Icons.location_on_outlined,
@@ -85,6 +96,9 @@ class RegisterPage extends StatelessWidget {
                       height: 20,
                     ),
                     CustomTextField(
+                      onChanged: (data) {
+                        password = data;
+                      },
                       typeKey: TextInputType.visiblePassword,
                       obscureText: true,
                       hintText: 'Password',

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:repopharma_app/views/forget_view.dart';
-import 'package:repopharma_app/views/register_view.dart';
+import 'package:repopharma_app/Auth/register/register_view.dart';
 import '../help/const.dart';
 import '../widgets/custom_elevated_Buttom.dart';
 import '../widgets/custom_text_Field.dart';
@@ -47,6 +47,10 @@ class LoginPage extends StatelessWidget {
                 child: Column(
                   children: [
                     CustomTextField(
+                      onChanged: (data) {
+                        phone = data;
+                        print(phone);
+                      },
                       hintText: 'E-Phone',
                       typeKey: TextInputType.number,
                       icons: Icons.phone,
@@ -55,6 +59,10 @@ class LoginPage extends StatelessWidget {
                       height: 20,
                     ),
                     CustomTextField(
+                      onChanged: (data) {
+                        password = data;
+                        print(password);
+                      },
                       obscureText: true,
                       typeKey: TextInputType.visiblePassword,
                       hintText: 'Password',

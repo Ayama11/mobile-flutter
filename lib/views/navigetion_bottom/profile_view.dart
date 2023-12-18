@@ -1,41 +1,48 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:repopharma_app/help/const.dart';
+import 'package:repopharma_app/views/navigetion_bottom/list_profile_page.dart';
+import 'package:repopharma_app/widgets/Appbar/appbar.dart';
+import 'package:repopharma_app/widgets/header_home_view.dart/searche_container.dart';
+
+import '../../widgets/header_home_view.dart/appbar.dart';
+import '../../widgets/header_home_view.dart/primary_header.dart';
 
 class ProfileView extends StatelessWidget {
   const ProfileView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        padding: const EdgeInsets.all(8),
-        child: ListView(
+    return const Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
           children: [
-            const SizedBox(
-              height: 250,
+            PrimaryHeader(
+              height: 210,
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 30,
+                  ),
+                  AppBarW(
+                    coloricon: Colors.white,
+                    showBackArrow: true,
+                    titel: Text(
+                      'Profile',
+                      style: TextStyle(
+                          color: Color.fromARGB(255, 255, 253, 253),
+                          fontSize: 24,
+                          fontFamily: 'Charm-Regular'),
+                    ),
+                    backgroundColor: Colors.transparent,
+                  ),
+                ],
+              ),
             ),
-            ListTile(
-              title: const Text('My Profile'),
-              leading: const Icon(Iconsax.profile_circle5),
-              onTap: () {
-                // Get.to( );
-              },
+            SizedBox(
+              height: 100,
             ),
-            ListTile(
-              title: const Text('Change Language'),
-              leading: const Icon(Iconsax.language_square5),
-              onTap: () {},
-            ),
-            ListTile(
-              title: const Text('Dark Mode'),
-              leading: const Icon(Iconsax.moon5),
-              onTap: () {},
-            ),
-            ListTile(
-              title: const Text('Log Out'),
-              leading: const Icon(Iconsax.logout_15),
-              onTap: () {},
-            ),
+            ListProfile()
           ],
         ),
       ),

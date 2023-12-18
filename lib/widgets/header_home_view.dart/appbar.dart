@@ -11,6 +11,7 @@ class AppBarW extends StatelessWidget implements PreferredSizeWidget {
     this.leadingOnPressed,
     this.showBackArrow = false,
     required this.backgroundColor,
+    this.coloricon = Colors.black,
   });
 
   final Widget? titel;
@@ -19,6 +20,7 @@ class AppBarW extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback? leadingOnPressed;
   final bool showBackArrow;
   final backgroundColor;
+  final coloricon;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -44,7 +46,7 @@ class AppBarW extends StatelessWidget implements PreferredSizeWidget {
                 onPressed: () => Get.back(),
                 icon: const Icon(Iconsax.arrow_left_3),
                 //arrow_square_left
-                color: Colors.black,
+                color: coloricon,
               )
             : leadingiIcon != null
                 ? IconButton(

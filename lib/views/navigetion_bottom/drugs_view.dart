@@ -25,6 +25,7 @@ class Drugs extends StatelessWidget {
         child: Column(
           children: [
             PrimaryHeader(
+              height: 310,
               child: Column(
                 children: [
                   const SizedBox(
@@ -76,7 +77,7 @@ class Drugs extends StatelessWidget {
               child: Text(
                 'Gategory',
                 style: TextStyle(
-                    fontSize: 22, fontFamily: 'PlayfairDisplay-SemiBoldItalic'),
+                    fontSize: 22, fontFamily: 'JosefinSans-VariableFont_wght'),
               ),
             ),
             Padding(

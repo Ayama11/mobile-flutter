@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:repopharma_app/views/forget_view.dart';
 import 'package:repopharma_app/views/homepage_view.dart';
-import 'package:repopharma_app/views/login_view.dart';
+
 import 'package:repopharma_app/views/logo.dart';
 import 'package:repopharma_app/widgets/navigetion_mune.dart';
+
+import 'Auth/login_view.dart';
 
 void main() {
   runApp(const RepoPharma());
